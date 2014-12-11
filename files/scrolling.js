@@ -42,17 +42,15 @@ function getLastDiv() {
 	var body = getBodyPosition();
 	var sw = $('.section').width();
 	var target = "";
-	if (body <= sw) {
+	if (body == sw) {
 		target = "#slide1";
-	}else if (body <= sw * 2) {
+	}else if (body == sw * 2) {
 		target = "#slide2";
-	}else if (body <= sw * 3) {
+	}else if (body == sw * 3) {
 		target = "#slide3";
-	}else if (body <= sw * 4) {
+	}else if (body == sw * 4) {
 		target = "#slide4";
-	}else if (body <= sw * 5) {
-		target = "#slide5";
-	}else if (body <= 12000) {
+	}else if (body == sw * 5) {
 		target = "#slide5";
 	}
 	return target;
@@ -62,13 +60,13 @@ function getNextDiv() {
 	var body = getBodyPosition();
 	var sw = $('.section').width();
 	var target = "";
-	if (body < sw) {
+	if (body == 0) {
 		target = "#slide2";
-	}else if (body < sw * 2) {
+	}else if (body == sw ) {
 		target = "#slide3";
-	}else if (body < sw * 3) {
+	}else if (body == sw * 2) {
 		target = "#slide4";
-	}else if (body < sw * 4) {
+	}else if (body == sw * 3) {
 		target = "#slide5";
 	}
 	return target;
