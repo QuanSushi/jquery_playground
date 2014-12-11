@@ -1,0 +1,212 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+body {
+	font-family: 'Wellfleet';
+	width: 12000px;
+	height: 100%;
+	background-image: url('../files/bg.png');
+	background-repeat: repeat-x;
+}
+
+.section {
+	margin: 0px;
+	width: 1920px;
+	height: 100%;
+	float: left;
+}
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+ * 																					 *
+ * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * 
+ */ 
+.controller {
+	width: 100px;
+	height: 130px;
+	z-index: 3;
+	position: fixed;
+	background-color: rgba(255, 113 ,98, 0.8);
+	border-radius: 5px;
+
+	color: #ffffff;
+	font-size: 40px;
+	text-align: center;
+	vertical-align: middle;
+	line-height: 130px;
+}
+
+#controller_left {
+ 	top: 599px;
+ 	left: 0px;
+}
+
+#controller_right {
+ 	top: 599px;
+ 	right: 0px;
+}
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+ * 																					 *
+ * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * 
+ */ 
+.textBox {
+	top: 40px;
+	left: 500px;
+	width: 400px;
+	height: 320px;
+	z-index: 1;
+	position: absolute;
+	background-color: rgba(138, 196 ,255, 0.8);
+	border: 5px solid;
+	border-radius: 10px;
+	border-color: #ffffff;
+
+	color: #ffffff;
+	font-size: 20px;
+	padding: 15px;
+}
+
+.inputBox {
+	top: 40px;
+	left: 950px;
+	width: 260px;
+	z-index: 1;
+	position: absolute;
+	background-color: rgba(255, 113 ,98, 0.8);
+	border: 5px solid;
+	border-radius: 10px;
+	border-color: #ffffff;
+
+	color: #ffffff;
+	font-size: 20px;
+	padding: 15px;
+}
+
+input {
+	width: 150px;
+	height: 45px;
+	font-family: 'Wellfleet';
+	font-size: 14px;
+}
+
+#sendButton {
+	width: 100px;
+	height: 45px;
+	z-index: 2;
+	float: right;
+	position: relative;
+	background-color: rgba(255, 255 ,255, 1);
+	border-radius: 10px;
+
+	color: #ff7162;
+	font-size: 14px;
+	text-align: center;
+	vertical-align: middle;
+	line-height: 45px;
+}
+
+#clearButton {
+	top: 6px;
+	width: 260px;
+	height: 45px;
+	z-index: 2;
+	float: left;
+	position: relative;
+	background-color: rgba(255, 255 ,255, 1);
+	border-radius: 10px;
+
+	color: #ff7162;
+	font-size: 14px;
+	text-align: center;
+	vertical-align: middle;
+	line-height: 45px;
+}
+
+#messages {
+	width: 395px;
+	height: 260px;
+	z-index: 1;
+	overflow: hidden;
+}
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+ * 																					 *
+ * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * 
+ */ 
+#digitalClock {	
+	top: 599px;
+	left: 107px;
+	width: 260px;
+	height: 120;
+	z-index: 3;
+	position: fixed;
+	background-color: rgba(255, 113 ,98, 0.8);
+	border: 5px solid;
+	border-radius: 5px;
+	border-color: rgba(138, 196 ,255, 0.8);
+
+	color: #ffffff;
+	font-size: 32px;
+	text-align: center;
+	vertical-align: middle;
+	line-height: 120px;
+}
+
+#year {	
+	top: 599px;
+	left: 372px;
+	width: 260px;
+	height: 120;
+	z-index: 3;
+	position: fixed;
+	background-color: rgba(255, 113 ,98, 0.8);
+	border: 5px solid;
+	border-radius: 5px;
+	border-color: rgba(138, 196 ,255, 0.8);
+
+	color: #ffffff;
+	font-size: 32px;
+	text-align: center;
+	vertical-align: middle;
+	line-height: 120px;
+}
+
+#month {	
+	top: 599px;
+	left: 638px;
+	width: 260px;
+	height: 120;
+	z-index: 3;
+	position: fixed;
+	background-color: rgba(255, 113 ,98, 0.8);
+	border: 5px solid;
+	border-radius: 5px;
+	border-color: rgba(138, 196 ,255, 0.8);
+
+	color: #ffffff;
+	font-size: 32px;
+	text-align: center;
+	vertical-align: middle;
+	line-height: 120px;
+}
+
+#day {	
+	top: 599px;
+	left: 903px;
+	width: 260px;
+	height: 120;
+	z-index: 3;
+	position: fixed;
+	background-color: rgba(255, 113 ,98, 0.8);
+	border: 5px solid;
+	border-radius: 5px;
+	border-color: rgba(138, 196 ,255, 0.8);
+
+	color: #ffffff;
+	font-size: 32px;
+	text-align: center;
+	vertical-align: middle;
+	line-height: 120px;
+}
