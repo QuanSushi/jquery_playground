@@ -18,7 +18,7 @@ $(document).ready( function scrollingLeft() {
 		var lastDiv = $(getLastDiv());
 		var position = lastDiv.position().left;
 		$body.stop().animate({
-			scrollLeft: position}, 2500);
+			scrollLeft: position}, 1500);
 	});
 });
 
@@ -28,7 +28,7 @@ $(document).ready( function scrollingRight() {
 		var nextDiv = $(getNextDiv());
 		var position = nextDiv.position().left;
 		$body.stop().animate({
-			scrollLeft: position}, 2500);
+			scrollLeft: position}, 1500);
 	});
 });
 
@@ -40,16 +40,17 @@ function getBodyPosition() {
 
 function getLastDiv() {
 	var body = getBodyPosition();
+	var sw = $('.section').width();
 	var target = "";
-	if (body <= 2000) {
+	if (body <= sw) {
 		target = "#slide1";
-	}else if (body <= 4000) {
+	}else if (body <= sw * 2) {
 		target = "#slide2";
-	}else if (body <= 6000) {
+	}else if (body <= sw * 3) {
 		target = "#slide3";
-	}else if (body <= 8000) {
+	}else if (body <= sw * 4) {
 		target = "#slide4";
-	}else if (body <= 10000) {
+	}else if (body <= sw * 5) {
 		target = "#slide5";
 	}else if (body <= 12000) {
 		target = "#slide5";
@@ -59,14 +60,15 @@ function getLastDiv() {
 
 function getNextDiv() {
 	var body = getBodyPosition();
+	var sw = $('.section').width();
 	var target = "";
-	if (body < 2000) {
+	if (body < sw) {
 		target = "#slide2";
-	}else if (body < 4000) {
+	}else if (body < sw * 2) {
 		target = "#slide3";
-	}else if (body < 6000) {
+	}else if (body < sw * 3) {
 		target = "#slide4";
-	}else if (body < 8000) {
+	}else if (body < sw * 4) {
 		target = "#slide5";
 	}
 	return target;
