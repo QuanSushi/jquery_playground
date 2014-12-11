@@ -84,11 +84,12 @@ body {
 	padding: 15px;
 }
 
-input {
+textarea {
 	width: 150px;
 	height: 45px;
 	font-family: 'Wellfleet';
 	font-size: 14px;
+	resize: none;
 }
 
 #sendButton {

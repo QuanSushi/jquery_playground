@@ -22,23 +22,21 @@ $(document).ready( function buttonFade() {
 $(document).ready( function input() {
 	$('#sendButton').click( function() {
 
-		var toAdd = $('input[name=message]').val();
+		var toAdd = $('textarea[name=message]').val();
 		$('#messages').append('<span id="mess">' + toAdd + '- </span>');
-		counter = counter + 1;
 
-		$('input[name=message]').val('');
+		$('textarea[name=message]').val('');
 	});
 
 	$(document).on('click', '#mess', function() {
 		$(this).remove();
-		counter = counter - 1;
 	});
 });
 
 $(document).ready( function clearMessage() {
 	$('#clearButton').click( function() {
 		$('#messages').empty();
-		$('input[name=message]').val('');
+		$('textarea[name=message]').val('');
 	});
 });
 
